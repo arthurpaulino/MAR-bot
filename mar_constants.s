@@ -22,9 +22,8 @@ DRILL_STATUS_OK   equ 0
 DRILL_STATUS_BUSY equ 1
 
 ;*************************** Inventory actions IDs
+INV_CLEAR equ 0
 INV_POLL  equ 1
-INV_CLEAR equ 2
-INV_EMPTY equ 0
 
 ;*************************** Laser actions IDs
 LASER_WITHDRAW equ 1
