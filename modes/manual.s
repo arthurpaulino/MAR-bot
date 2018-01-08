@@ -23,7 +23,7 @@ mode_manual:
     mode_manual_end:
         mov A, KEYBOARD_CLEAR
         hwi HWID_KEYBOARD
-        ret
+        jmp main_end
     set_mode_auto:
         mov [mode], MODE_AUTO
         jmp mode_manual_end

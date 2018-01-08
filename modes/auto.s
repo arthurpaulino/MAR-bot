@@ -8,7 +8,7 @@ mode_auto:
     mode_auto_end:
         mov A, KEYBOARD_CLEAR
         hwi HWID_KEYBOARD
-        ret
+        jmp main_end
     set_mode_manual:
         mov [mode], MODE_MANUAL
         jmp mode_auto_end
