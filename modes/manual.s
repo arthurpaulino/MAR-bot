@@ -48,7 +48,7 @@ mode_manual:
         hwi HWID_DRILL
         jmp mode_manual_end
     inventory_clear:
-        mov A, INV_EMPTY
+        mov A, INV_CLEAR
         hwi HWID_INV
         jmp mode_manual_end
     laser_biomass:
