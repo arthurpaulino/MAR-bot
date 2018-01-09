@@ -15,8 +15,7 @@ HWID_COMPORT  equ 0xD
 
 ;*************************** Drill actions IDs
 DRILL_POLL        equ 1
-DRILL_GATHER_SLOW equ 2
-DRILL_GATHER_FAST equ 3
+DRILL_GATHER      equ 2
 ; Drill status
 DRILL_STATUS_OK   equ 0
 DRILL_STATUS_BUSY equ 1
@@ -74,9 +73,11 @@ FLOPPY_WRITE_SECTOR equ 3
 RADIO_LISTEN equ 1
 
 ;*************************** Com Port actions IDs
+COMPORT_BUFFER_CLEAR   equ 0
 COMPORT_POLL           equ 1
 COMPORT_FRONT_PORT_OUT equ 2
 COMPORT_SELF_OUT       equ 3
+COMPORT_CONSOLE_CLEAR  equ 4
 
 ;*************************** Keys IDs
 KEY_ESC   equ 0x1b

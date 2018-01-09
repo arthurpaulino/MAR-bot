@@ -15,3 +15,6 @@ add main.s
 add modes/display.s
 add modes/manual.s
 add modes/auto.s
+
+# AI
+add ai/start.s

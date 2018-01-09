@@ -44,7 +44,7 @@ mode_manual:
         hwi HWID_LEGS
         jmp mode_manual_end
     drill:
-        mov A, DRILL_GATHER_SLOW
+        mov A, DRILL_GATHER
         hwi HWID_DRILL
         jmp mode_manual_end
     inventory_clear:

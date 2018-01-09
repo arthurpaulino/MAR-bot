@@ -16,5 +16,5 @@ mode_auto:
         jmp mode_auto_end
 
 go_auto:
-    ; todo
+    call ai_start
     jmp mode_auto_end
