@@ -18,3 +18,12 @@ add modes/auto.s
 
 # AI
 add ai/start.s
+add ai/find_biomass.s
+add ai/approach_biomass.s
+add ai/migrate.s
+
+# Math
+add math/manhattan_distance.s
+
+# Debug
+add debug.s

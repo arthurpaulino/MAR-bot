@@ -42,6 +42,9 @@ LIDAR_GET_POS       equ 1
 LIDAR_GET_PATH      equ 2
 LIDAR_GET_MAP       equ 3
 LIDAR_GET_WORLD_POS equ 4
+; LIDAR_GET_MAP conventions
+LIDAR_GET_MAP_START   equ 0x0100
+LIDAR_GET_MAP_BIOMASS equ 0x4000
 
 ;*************************** Keyboard actions IDs
 KEYBOARD_CLEAR     equ 0

@@ -16,4 +16,10 @@ Press `ENTER` to go to *manual mode*. In *manual mode*, press `ESC` to go to *au
 
 ## Auto mode
 
-TODO
+```
+find closest biomass
+if could find it
+    go for it //TODO
+else
+    migrate //TODO
+```
