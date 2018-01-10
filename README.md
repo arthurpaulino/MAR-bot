@@ -2,6 +2,8 @@
 
 My bot for the [Much Assembly Required](https://muchassemblyrequired.com) game.
 
+Build with `$ sh build.sh`, copy the code from the (created) `MuchAssemblyRequired.s` file and then paste it into the game editor.
+
 Press `ENTER` to go to *manual mode*. In *manual mode*, press `ESC` to go to *auto mode*.
 
 ## Manual mode
@@ -21,5 +23,5 @@ find closest biomass
 if could find it
     go for it //TODO
 else
-    migrate //TODO
+    migrate to a new world //TODO
 ```
