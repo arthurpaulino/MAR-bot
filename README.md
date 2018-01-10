@@ -12,9 +12,9 @@ Press `ENTER` to go to *manual mode*. In *manual mode*, press `ESC` to go to *au
 * `q` goes south
 * `1` goes west
 * `w` goes east
-* `e` to collect biomass
-* `d` to drill
-* `c` to clean inventory
+* `e` collects biomass
+* `d` drills
+* `c` clears inventory
 
 ## Auto mode
 
