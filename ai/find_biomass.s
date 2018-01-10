@@ -16,6 +16,8 @@ ai_find_biomass:
         mov [found_biomass], 1
 
         call lidar_get_pos
+        mov [orig_x], X
+        mov [orig_y], Y
         mov [dest_x], [iter_tile_x]
         mov [dest_y], [iter_tile_y]
         call manhattan_distance

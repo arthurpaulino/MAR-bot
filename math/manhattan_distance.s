@@ -1,31 +1,31 @@
-; computes the manhattan distance between (X, Y) and ([dest_x], [dest_y]) and
+; computes the manhattan distance between ([orig_x], [orig_y]) and ([dest_x], [dest_y]) and
 ; stores it into A
 ; MODIFIES: A, B
 manhattan_distance:
-    cmp X, [dest_x]
+    cmp [orig_x], [dest_x]
     jl manhattan_distance_greater_dest_x
 
-    mov A, X
+    mov A, [orig_x]
     sub A, [dest_x]
 
     jmp manhattan_distance_compute_y
 
     manhattan_distance_greater_dest_x:
         mov A, [dest_x]
-        sub A, X
+        sub A, [orig_x]
 
     manhattan_distance_compute_y:
-        cmp Y, [dest_y]
+        cmp [orig_y], [dest_y]
         jl manhattan_distance_greater_dest_y
 
-        mov B, Y
+        mov B, [orig_y]
         sub B, [dest_y]
 
         jmp end_manhattan_distance
 
         manhattan_distance_greater_dest_y:
             mov B, [dest_y]
-            sub B, Y
+            sub B, [orig_y]
 
     end_manhattan_distance:
         add A, B

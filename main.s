@@ -3,6 +3,8 @@
     tile_ptr: dw 0, 0
     iter_tile_x: dw 0, 0
     iter_tile_y: dw 0, 0
+    orig_x: dw 0, 0
+    orig_y: dw 0, 0
     dest_x: dw 0, 0
     dest_y: dw 0, 0
     shortest_biomass_distance: dw 0, 0
