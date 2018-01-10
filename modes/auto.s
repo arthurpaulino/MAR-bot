@@ -1,6 +1,5 @@
 mode_auto:
-    mov A, KEYBOARD_FETCH_KEY
-    hwi HWID_KEYBOARD
+    call keyboard_fetch_key
 
     cmp B, KEY_ENTER
     jz set_mode_manual
@@ -8,8 +7,7 @@ mode_auto:
     jmp go_auto
 
     mode_auto_end:
-        mov A, KEYBOARD_CLEAR
-        hwi HWID_KEYBOARD
+        call keyboard_clear
         jmp main_end
     set_mode_manual:
         mov [mode], MODE_MANUAL

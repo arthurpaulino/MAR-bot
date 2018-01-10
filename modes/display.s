@@ -1,6 +1,4 @@
 mode_display:
-    mov A, HOLO_DISPLAY_STRING
-
     cmp [mode], MODE_MANUAL
     jz set_mode_msg_manual
 
@@ -15,5 +13,5 @@ mode_display:
         mov X, MODE_AUTO_MSG
 
     mode_set:
-        hwi HWID_HOLO
+        call holo_display_string
         ret

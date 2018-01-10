@@ -1,6 +1,5 @@
 .data
     mode: dw MODE_AUTO, 0
-    tile_counter: dw 0, 0
     tile_ptr: dw 0, 0
     iter_tile_x: dw 0, 0
     iter_tile_y: dw 0, 0
