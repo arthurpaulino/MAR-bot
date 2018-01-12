@@ -11,17 +11,7 @@ add mar_constants.s
 add my_constants.s
 add main.s
 
-# Hardware
-add hardware/holo.s
-add hardware/keyboard.s
-add hardware/legs.s
-add hardware/drill.s
-add hardware/inv.s
-add hardware/laser.s
-add hardware/lidar.s
-
 # Modes
-add modes/display.s
 add modes/manual.s
 add modes/auto.s
 
@@ -31,8 +21,16 @@ add ai/find_biomass.s
 add ai/approach_biomass.s
 add ai/migrate.s
 
-# Math
-add math/manhattan_distance.s
+# Hardware
+add hardware/holo.s
+add hardware/keyboard.s
+add hardware/legs.s
+add hardware/drill.s
+add hardware/inv.s
+add hardware/laser.s
+add hardware/lidar.s
 
-# Debug
-add debug.s
+# Util
+add util/display_mode.s
+add util/manhattan_distance.s
+add util/debug.s

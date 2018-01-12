@@ -1,4 +1,4 @@
-mode_display:
+display_mode:
     cmp [mode], MODE_MANUAL
     jz set_mode_msg_manual
 

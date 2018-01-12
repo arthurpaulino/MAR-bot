@@ -16,7 +16,7 @@
     temp_B: dw 0, 0
 
 .text
-    call mode_display
+    call display_mode
 
     cmp [mode], MODE_MANUAL
     jz mode_manual
