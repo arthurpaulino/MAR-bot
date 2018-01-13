@@ -1,7 +1,7 @@
-; computes the manhattan distance between ([orig_x], [orig_y]) and ([dest_x], [dest_y]) and
-; stores it into A
-; MODIFIES: A, B
+; computes the manhattan distance between ([orig_x], [orig_y]) and
+; ([dest_x], [dest_y]) then stores it into A
 manhattan_distance:
+    mov [temp_B], B
     cmp [orig_x], [dest_x]
     jl manhattan_distance_greater_dest_x
 
@@ -29,4 +29,5 @@ manhattan_distance:
 
     end_manhattan_distance:
         add A, B
+        mov B, [temp_B]
         ret
