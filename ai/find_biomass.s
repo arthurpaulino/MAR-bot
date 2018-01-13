@@ -15,6 +15,10 @@ ai_find_biomass:
 
         mov [found_biomass], 1
 
+        call lidar_get_world_pos
+        mov [target_biomass_world_x], X
+        mov [target_biomass_world_y], Y
+
         call lidar_get_pos
         mov [orig_x], X
         mov [orig_y], Y
@@ -27,6 +31,8 @@ ai_find_biomass:
         mov [shortest_biomass_distance], A
         mov [target_biomass_x], [iter_tile_x]
         mov [target_biomass_y], [iter_tile_y]
+
+        call update_path
 
         continuefor_ai_find_biomass:
 

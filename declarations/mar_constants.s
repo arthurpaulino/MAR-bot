@@ -31,11 +31,6 @@ LASER_DEPOSIT  equ 2
 ;*************************** Legs actions IDs
 LEGS_SET_DIRECTION          equ 1
 LEGS_SET_DIRECTION_AND_WALK equ 2
-; Legs directions
-LEGS_DIR_NORTH equ 0
-LEGS_DIR_EAST  equ 1
-LEGS_DIR_SOUTH equ 2
-LEGS_DIR_WEST  equ 3
 
 ;*************************** LiDAR actions IDs
 LIDAR_GET_POS       equ 1
@@ -45,6 +40,15 @@ LIDAR_GET_WORLD_POS equ 4
 ; LIDAR_GET_MAP conventions
 LIDAR_GET_MAP_START   equ 0x0100
 LIDAR_GET_MAP_BIOMASS equ 0x4000
+; LIDAR_GET_PATH conventions
+LIDAR_GET_PATH_START equ 0x0000
+LIDAR_GET_PATH_END   equ 0xAAAA
+
+; Directions (for Legs and LiDAR path)
+DIR_NORTH equ 0
+DIR_EAST  equ 1
+DIR_SOUTH equ 2
+DIR_WEST  equ 3
 
 ;*************************** Keyboard actions IDs
 KEYBOARD_CLEAR     equ 0
