@@ -24,6 +24,7 @@ update_path:
         mov [old_target_biomass_world_y], [target_biomass_world_y]
         mov [old_target_biomass_x], [target_biomass_x]
         mov [old_target_biomass_y], [target_biomass_y]
+        mov [has_migrating_target_cell], 0
 
     update_path_done:
         ret

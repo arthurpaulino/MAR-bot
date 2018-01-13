@@ -1,5 +1,5 @@
 .text
-    call display_mode
+    call display_battery
 
     cmp [mode], MODE_MANUAL
     jz mode_manual

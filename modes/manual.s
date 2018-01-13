@@ -22,6 +22,7 @@ mode_manual:
         call keyboard_clear
         jmp main_end
     set_mode_auto:
+        call reset_to_auto
         mov [mode], MODE_AUTO
         jmp mode_manual_end
     mode_manual_north:

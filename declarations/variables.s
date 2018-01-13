@@ -20,6 +20,12 @@
     path_ptr: dw 0, 0
     bad_world: dw 0, 0
     faced_to_biomass: dw 0, 0
+    invalid_door: dw 4, 0
+    target_door: dw 0, 0
+    has_migrating_target_cell: dw 0, 0
+    target_migrating_cell_x: dw 0, 0
+    target_migrating_cell_y: dw 0, 0
+    has_migrating_path: dw 0, 0
 
     temp_A: dw 0, 0
     temp_B: dw 0, 0

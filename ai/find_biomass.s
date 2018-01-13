@@ -2,7 +2,7 @@ ai_find_biomass:
     call lidar_get_map
 
     mov [found_biomass], 0
-    mov [shortest_biomass_distance], 17
+    mov [shortest_biomass_distance], 33
     mov [tile_ptr], LIDAR_GET_MAP_START
     mov [iter_tile_x], 0
     mov [iter_tile_y], 0

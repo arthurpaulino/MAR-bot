@@ -25,6 +25,8 @@ add ai/find_biomass.s
 add ai/face_biomass.s
 add ai/hunt_biomass.s
 add ai/migrate.s
+add ai/decide_migrating_cell.s
+add ai/enter_new_world.s
 
 # Hardware
 add hardware/holo.s
@@ -34,9 +36,12 @@ add hardware/drill.s
 add hardware/inv.s
 add hardware/laser.s
 add hardware/lidar.s
+add hardware/rng.s
+add hardware/battery.s
 
 # Util
-add util/display_mode.s
+add util/display_battery.s
 add util/manhattan_distance.s
 add util/update_path.s
 add util/debug.s
+add util/reset_to_auto.s
