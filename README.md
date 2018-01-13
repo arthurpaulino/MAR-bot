@@ -2,7 +2,7 @@
 
 My bot for the [Much Assembly Required](https://muchassemblyrequired.com) game.
 
-Build with `$ sh build.sh`, copy the code from the (created) `MuchAssemblyRequired.s` file and then paste it into the game editor.
+Build with `$ sh build.sh`, copy the code from the (new) `MuchAssemblyRequired.s` file and then paste it into the game editor.
 
 Press `ENTER` to go to *manual mode* (red). In *manual mode*, press `ESC` to go to *auto mode* (blue color).
 
