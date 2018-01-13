@@ -24,6 +24,7 @@ mode_manual:
     set_mode_auto:
         call reset_to_auto
         mov [mode], MODE_AUTO
+        call set_auto_color
         jmp mode_manual_end
     mode_manual_north:
         call legs_walk_north

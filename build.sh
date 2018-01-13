@@ -45,3 +45,4 @@ add util/manhattan_distance.s
 add util/update_path.s
 add util/debug.s
 add util/reset_to_auto.s
+add util/set_mode_color.s

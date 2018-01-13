@@ -11,6 +11,7 @@ mode_auto:
         jmp main_end
     set_mode_manual:
         mov [mode], MODE_MANUAL
+        call set_manual_color
         jmp mode_auto_end
 
 go_auto:

@@ -4,7 +4,7 @@ My bot for the [Much Assembly Required](https://muchassemblyrequired.com) game.
 
 Build with `$ sh build.sh`, copy the code from the (created) `MuchAssemblyRequired.s` file and then paste it into the game editor.
 
-Press `ENTER` to go to *manual mode*. In *manual mode*, press `ESC` to go to *auto mode*.
+Press `ENTER` to go to *manual mode* (red). In *manual mode*, press `ESC` to go to *auto mode* (blue color).
 
 ## Manual mode
 
@@ -19,9 +19,21 @@ Press `ENTER` to go to *manual mode*. In *manual mode*, press `ESC` to go to *au
 ## Auto mode
 
 ```
-find closest biomass
-if could find it
-    go for it
-else
-    migrate to a new world //TODO
+tick:
+    bio <- closest biomass
+    if (bio exists):
+        if (bio is reachable):
+            hunt bio
+        else:
+            migrate
+    else:
+        migrate
+
+migrate:
+    door <- random door different from entrance
+    if (door is reachable):
+        perform migration
+    else:
+        go back to previous map
+
 ```
