@@ -2,9 +2,12 @@
 
 My bot for the [Much Assembly Required](https://muchassemblyrequired.com) game.
 
-Build with `$ sh build.sh`, copy the code from the (new) `MuchAssemblyRequired.s` file and then paste it into the game editor.
+1. Build with `$ sh build.sh`
+2. Copy the code from the (new) `MuchAssemblyRequired.s` file and then paste it into the game editor
+3. Upload the code
+4. Contemplate the cubot in the *Game* tab. It displays its battery's energy level.
 
-Press `ENTER` to go to *manual mode* (red). In *manual mode*, press `ESC` to go to *auto mode* (blue color).
+Press `ENTER` to go switch to *manual mode* (red). In *manual mode*, press `ESC` to switch back to *auto mode* (blue).
 
 ## Manual mode
 
@@ -14,7 +17,7 @@ Press `ENTER` to go to *manual mode* (red). In *manual mode*, press `ESC` to go 
 * `w` goes east
 * `e` collects biomass
 * `d` drills
-* `c` clears inventory
+* `c` clears inventory (restores energy)
 
 ## Auto mode
 
