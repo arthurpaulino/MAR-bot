@@ -18,6 +18,7 @@
     old_target_biomass_world_x: dw 0, 0
     old_target_biomass_world_y: dw 0, 0
     path_ptr: dw 0, 0
+    bad_world: dw 0, 0
     faced_to_biomass: dw 0, 0
 
     temp_A: dw 0, 0

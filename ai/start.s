@@ -3,6 +3,9 @@ ai_start:
 
     call ai_find_biomass
 
+    cmp [bad_world], 1
+    jz ai_start_migrate
+
     cmp [found_biomass], 1
     jz ai_start_hunt_biomass
 
