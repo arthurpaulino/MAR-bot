@@ -15,7 +15,6 @@ ai_hunt_biomass:
     ai_hunt_biomass_walk:
         call legs_walk
         inc [path_ptr]
-        mov [faced_to_biomass], 0
         jmp ai_hunt_biomass_end
     ai_hunt_biomass_bad_world:
         mov [bad_world], 1
